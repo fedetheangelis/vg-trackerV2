@@ -1,20 +1,19 @@
 {
   "name": "game-tracker-pro",
-  "private": true,
-  "version": "0.0.0",
+  "version": "1.0.0",
+  "description": "Un'applicazione per tenere traccia dei giochi giocati e del backlog.",
   "type": "module",
   "scripts": {
-    "dev": "vite",
-    "build": "vite build",
-    "preview": "vite preview"
+    "build": "esbuild index.tsx --bundle --outfile=bundle.js --platform=browser --format=esm --minify --define:process.env.NODE_ENV='\"production\"' --define:process.env.RAWG_API_KEY='\"b06700683ebe479fa895f1db55b1abb8\"'",
+    "start": "esbuild index.tsx --bundle --outfile=bundle.js --platform=browser --format=esm --servedir=. --watch --define:process.env.NODE_ENV='\"development\"' --define:process.env.RAWG_API_KEY='\"b06700683ebe479fa895f1db55b1abb8\"'"
   },
   "dependencies": {
     "react": "^19.1.0",
     "react-dom": "^19.1.0"
   },
   "devDependencies": {
-    "@types/node": "^22.14.0",
-    "typescript": "~5.7.2",
-    "vite": "^6.2.0"
-  }
+    "esbuild": "^0.23.0"
+  },
+  "author": "Fede (Modificato da IA)",
+  "license": "ISC"
 }
