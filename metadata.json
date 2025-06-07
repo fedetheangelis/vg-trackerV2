@@ -1,0 +1,5 @@
+
+{
+  "name": "Game Tracker Pro",
+  "description": "Un'applicazione per tenere traccia dei giochi giocati, di quelli nel backlog e importare la tua libreria da un file TSV, con recupero automatico delle copertine tramite l'API RAWG."
+}
